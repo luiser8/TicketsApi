@@ -14,6 +14,7 @@ namespace TicketsApi.Models
         }
         public virtual DbSet<Queue> Queue { get; set; }
         public virtual DbSet<Client> Client { get; set; }
+        public virtual DbSet<Attended> Attended { get; set; }
 
         public async Task<int> SaveChanges()
         {
